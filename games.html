@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehab Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background: #f2f4f7;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      color: #f39c12;
+    }
+    .affirmation {
+      font-style: italic;
+      color: #2980b9;
+      margin: 10px 0;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .game-card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+    .game-card h2 {
+      color: #3498db;
+    }
+    .game-card p {
+      color: #555;
+    }
+    .play-btn {
+      margin-top: 10px;
+      background: #1abc9c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .play-btn:hover {
+      background: #16a085;
+    }
+    .back-btn {
+      display: block;
+      margin: 30px auto;
+      background: #f39c12;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .back-btn:hover {
+      background: #e67e22;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Choose Your Game</h1>
+    <div class="affirmation">"Each challenge you accept brings you closer to recovery."</div>
+    <div class="affirmation">"Your courage shines through every task—keep going strong!"</div>
+  </div>
+
+  <div class="game-grid">
+    <div class="game-card">
+      <h2>Memory Game</h2>
+      <p>Sharpen recall by matching cards.</p>
+      <button class="play-btn" onclick="alert('Memory Game will load here.')">Play</button>
+    </div>
+
+    <div class="game-card">
+      <h2>Speech Practice</h2>
+      <p>Say words and get feedback.</p>
+      <button class="play-btn" onclick="alert('Speech Game will load here.')">Play</button>
+    </div>
+
+    <div class="game-card">
+      <h2>Family Scenario</h2>
+      <p>Look at 2 related images and describe what happened after.</p>
+      <button class="play-btn" onclick="alert('Family Scenario Game will load here.')">Play</button>
+    </div>
+
+    <div class="game-card">
+      <h2>Bollywood Quiz</h2>
+      <p>Identify the movie based on props.</p>
+      <button class="play-btn" onclick="alert('Bollywood Quiz will load here.')">Play</button>
+    </div>
+
+    <div class="game-card">
+      <h2>Dual-Task Quiz</h2>
+      <p>Answer temple location + memory test together.</p>
+      <button class="play-btn" onclick="alert('Dual-Task Quiz will load here.')">Play</button>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+</body>
+</html>
